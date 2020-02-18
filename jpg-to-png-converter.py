@@ -10,7 +10,7 @@ output_folder = sys.argv[2]
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 
-#loop through Pokedex
+#loop through the image folder
 for image in os.listdir(image_folder):
     # convert each image to png and save to new folder
     original_image = Image.open(f'{image_folder}{image}') #pokemon/pikachu.jpg
